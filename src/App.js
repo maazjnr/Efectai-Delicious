@@ -1,15 +1,17 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
+import Pages from "./page/Pages";
 
 function App() {
 
   return (
 
-    <BrowserRouter>
+
     <div className="App">
-     <h1>Hello World</h1>
+    <BrowserRouter>
+     <Pages />
+     </BrowserRouter>
     </div>
-    </BrowserRouter>
   );
 }
 
