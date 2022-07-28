@@ -225,18 +225,14 @@ text-align: center;
   .veggie-container img{
   width: 140px;
   height: 200px;
-  padding: 10px 10px;
-  border-radius: 40px;
-  padding-left: 30px;
+  border-radius: 30px;
   object-fit: cover;
 }
 
 .popular-container img{
   width: 200px;
   height: 230px;
-  padding: 10px 10px;
-  border-radius: 40px;
-  padding-left: 30px;
+  border-radius: 30px;
   object-fit: cover;
 }
 

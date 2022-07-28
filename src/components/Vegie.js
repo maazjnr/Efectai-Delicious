@@ -16,7 +16,7 @@ const Vegie = () => {
 
     const getVegie = async () => {
 
-        const url = `https://api.spoonacular.com/recipes/random?apiKey=${myApiKey}&number=20&tags=vegetarian`;
+        const url = `https://api.spoonacular.com/recipes/random?apiKey=${myApiKey}&number=22&tags=vegetarian`;
 
         const check = localStorage.getItem("veggie");
         if(check) {
@@ -34,7 +34,7 @@ const Vegie = () => {
             <h1>OUR VEGETARIAN</h1> 
             <Splide options={{
             perPage: 3, 
-            arrows: true,
+            arrows: false,
             pagination: false,
             drag: "free",
             gap: "90px"
