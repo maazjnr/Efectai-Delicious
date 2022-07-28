@@ -33,7 +33,7 @@ const Vegie = () => {
         <div className='veggie'>
             <h1>OUR VEGETARIAN</h1> 
             <Splide options={{
-            perPage: 3, 
+            perPage: 2, 
             arrows: false,
             pagination: false,
             drag: "free",
