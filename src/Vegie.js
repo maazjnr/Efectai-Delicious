@@ -14,18 +14,19 @@ const Vegie = () => {
         getVegie();
     }, []);
 
-    const url = (`https://api.spoonacular.com/recipes
-    /random?apiKey=${myApiKey}&number=9&tags=vegetarian`)
 
     const getVegie = async () => {
-        const check = localStorage.getItem('veggie');
+
+        const check = localStorage.getItem("veggie");
         if(check) {
             setVeggie(JSON.parse(check))
         } else{
-            const api = await fetch(url);
+            const api = await fetch(`
+            https://api.spoonacular.com/recipes/random?apiKey=${myApiKey}&number=9&tags=vegetarian`
+            );
             const data = await api.json();
             setVeggie(data.recipes)
-            localStorage.setItem('veggie', JSON.stringify(data.recipes));
+            localStorage.setItem("veggie", JSON.stringify(data.recipes));
         }
     };
 
@@ -43,8 +44,10 @@ const Vegie = () => {
                 return(
                     <SplideSlide key={recipe.id}>
                     <div className='veggie-container'>
-                        <img src={recipe.image} alt="" />
+                        <Link to='/'>
+                        <img src={recipe.image} alt="veggieimage" />
                         <p>{recipe.title}</p>
+                        </Link>
                     </div>
                     </SplideSlide>
                 )
