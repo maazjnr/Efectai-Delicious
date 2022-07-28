@@ -1,39 +1,52 @@
 import React, { useEffect, useState } from 'react';
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
+import { Link } from 'react-router-dom';
 
 const Vegie = () => {
 
     let myApiKey = "dc08124ff78a4ea9855372247525457d";
-    const [veggie, setVegie] = useState([]);
+
+
+    const [veggie, setVeggie] = useState([]);
 
     useEffect(() => {
         getVegie();
     }, []);
 
+    const url = (`https://api.spoonacular.com/recipes
+    /random?apiKey=${myApiKey}&number=9&tags=vegetarian`)
 
     const getVegie = async () => {
-        const api = await fetch(
-            `https://api.spoonacular.com/recipes/random?apiKey=${myApiKey}&number=9&tags=vegetarian`);
-        const data = await api.json();
-        setVegie(data.recipes)
+        const check = localStorage.getItem('veggie');
+        if(check) {
+            setVeggie(JSON.parse(check))
+        } else{
+            const api = await fetch(url);
+            const data = await api.json();
+            setVeggie(data.recipes)
+            localStorage.setItem('veggie', JSON.stringify(data.recipes));
+        }
     };
 
     return(
         <div className='veggie'>
+            <h1>OUR VEGETARIAN</h1> 
             <Splide options={{
             perPage: 3, 
             arrows: true,
             pagination: false,
             drag: "free",
-            gap: "40px"
+            gap: "90px"
             }}>
             {veggie.map((recipe) => {
                 return(
                     <SplideSlide>
                     <div className='veggie-container'>
-                        <p>{recipe.title}</p>
+                        <Link to='/'>
                         <img src={recipe.image} alt="" />
+                        <p>{recipe.title}</p>
+                        </Link>
                     </div>
                     </SplideSlide>
                 )
