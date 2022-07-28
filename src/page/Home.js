@@ -3,6 +3,7 @@ import {FaPizzaSlice, FaHamburger} from 'react-icons/fa';
 import {GiNoodles, GiChopsticks} from 'react-icons/gi';
 import { Link } from 'react-router-dom';
 import Vegie from '../Vegie';
+import Search from '../components/Search';
 
 const Home = () => {
 
@@ -12,7 +13,7 @@ const Home = () => {
                     <h5>Welcome to</h5>
                     <h1>Efectai Delicious</h1>
                 </div>
-
+                <Search />
                 <div className='category'>
                     <Link className='category-link' to=''>
                     <FaPizzaSlice />
@@ -20,6 +21,10 @@ const Home = () => {
                     </Link>
                     <Link className='category-link' to=''>
                     <GiNoodles /><h4>Thai</h4>
+                    </Link>
+                    <Link className='category-link' to=''>
+                    <FaHamburger/>
+                    <h4>America</h4>
                     </Link>
                     <Link className='category-link' to=''>
                     <GiChopsticks />

@@ -84,7 +84,7 @@ text-align: center;
 
 .veggie{
   height: 30vh;
-  padding: 100px;
+  padding: 50px;
   text-align: center;
 }
 
@@ -94,6 +94,7 @@ text-align: center;
 
 .veggie-container{
   position: relative;
+  margin-bottom: 40px;
 }
 
 .veggie-container img{
@@ -122,6 +123,33 @@ text-align: center;
 }
 
 /* VEGGIES STYLING */
+
+
+/* Search Styling */
+.search-container{
+  display: grid;
+  grid-template: column;
+  place-items: center;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.search-container form{
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template: column;
+  place-items: center;
+}
+
+.search-container input{
+  width: 70rem;
+  height: 60px;
+  text-indent: 20px;
+  border-radius: 20px;
+  border:solid #f27121 1px;
+}
+/* Search Styling */
 
 
 
@@ -158,5 +186,37 @@ text-align: center;
 .veggie-container p{
   display: none;
 }
+
+.search-container input{
+  width: 20rem;
+  height: 50px;
+  text-indent: 20px;
 }
 
+.category-link{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+text-decoration: none;
+background: linear-gradient(to right, #f27121, #e94057);
+width: 4.5rem;
+height: 4.5rem;
+cursor: pointer;
+transform: scale(0.8);
+text-align: center;
+font-size: 10px;
+}
+}
+
+
+@media screen and (max-width: 400px){
+  .search-container input{
+    width: 20rem;
+    height: 50px;
+    text-indent: 20px;
+    border-radius: 20px;
+    border:solid #f27121 1px;
+  }
+}
