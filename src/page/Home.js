@@ -2,8 +2,9 @@ import React from 'react';
 import {FaPizzaSlice, FaHamburger} from 'react-icons/fa';
 import {GiNoodles, GiChopsticks} from 'react-icons/gi';
 import { Link } from 'react-router-dom';
-import Vegie from '../Vegie';
+import Vegie from '../components/Vegie';
 import Search from '../components/Search';
+import Popular from '../components/Popular';
 
 const Home = () => {
 
@@ -33,6 +34,7 @@ const Home = () => {
                 </div>
 
                 <Vegie />
+                <Popular />
             </section>
     )
 }

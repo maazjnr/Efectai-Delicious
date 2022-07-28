@@ -84,7 +84,7 @@ text-align: center;
 
 .veggie{
   height: 30vh;
-  padding: 50px;
+  padding: 0px 50px;
   text-align: center;
 }
 
@@ -125,12 +125,56 @@ text-align: center;
 /* VEGGIES STYLING */
 
 
+/* POPULAR STYLING */
+.popular{
+  height: 30vh;
+  padding: 0px 50px;
+  text-align: center;
+  margin-top: 20rem;
+}
+
+.popular h1{
+  color: #f27121;
+}
+
+.popular-container{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.popular-container img{
+  width: 400px;
+  height: 400px;
+  border-radius: 40px;
+  object-fit: cover;
+
+}
+
+.popular-container p{
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, 0%);
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+/* POPULAR STYLING */
+
+
 /* Search Styling */
 .search-container{
   display: grid;
   grid-template: column;
   place-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
   width: 100%;
 }
 
@@ -169,7 +213,11 @@ text-align: center;
 
 @media screen and (max-width: 768px) {
 
-  .veggie{
+  .popular{
+    margin-top: 0px;
+  }
+
+  .veggie, .popular{
     height: 40vh;
     padding: 10px;
   }
@@ -183,7 +231,16 @@ text-align: center;
   object-fit: cover;
 }
 
-.veggie-container p{
+.popular-container img{
+  width: 200px;
+  height: 230px;
+  padding: 10px 10px;
+  border-radius: 40px;
+  padding-left: 30px;
+  object-fit: cover;
+}
+
+.veggie-container p, .popular-container p{
   display: none;
 }
 
@@ -213,10 +270,28 @@ font-size: 10px;
 
 @media screen and (max-width: 400px){
   .search-container input{
-    width: 20rem;
+    width: 18rem;
     height: 50px;
     text-indent: 20px;
     border-radius: 20px;
     border:solid #f27121 1px;
+  }
+
+  .home-banner{
+    width: 100%;
+    height: 50vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.879),
+     rgba(0, 0, 0, 0.848)), url(../src//image/home-banner-img.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home-banner h1{
+    font-size: 30px;
   }
 }
