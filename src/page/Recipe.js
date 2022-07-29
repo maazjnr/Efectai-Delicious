@@ -40,4 +40,4 @@ const DetailsWrapper = styled.div`
 `;
 
 
-export default Recipe
+export default Recipe;
