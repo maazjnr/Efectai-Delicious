@@ -16,20 +16,20 @@ const Home = () => {
                 </div>
                 <Search />
                 <div className='category'>
-                    <Link className='category-link' to=''>
+                    <Link className='category-link' to='/cuisine/Italian'>
                     <FaPizzaSlice />
                     <h4>Italian</h4>
                     </Link>
-                    <Link className='category-link' to=''>
+                    <Link className='category-link' to='/cuisine/Thai'>
                     <GiNoodles /><h4>Thai</h4>
                     </Link>
-                    <Link className='category-link' to=''>
+                    <Link className='category-link' to='/cuisine/American'>
                     <FaHamburger/>
                     <h4>America</h4>
                     </Link>
-                    <Link className='category-link' to=''>
+                    <Link className='category-link' to='/cuisine/Thai' >
                     <GiChopsticks />
-                    <h4>Italian</h4>
+                    <h4>Japan</h4>
                     </Link>
                 </div>
 

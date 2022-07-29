@@ -48,7 +48,7 @@ const FormStyle = styled.form`
         border-radius: 1rem;
         outline: none;
         width: 90%;
-        text-indent: 30px;
+        text-indent: 10px;
         margin-left: 0px;
     }
 
@@ -75,8 +75,16 @@ const FormStyle = styled.form`
             border-radius: 1rem;
             outline: none;
             width: 90%;
-            text-indent: 30px;
+            text-indent: 10pxpx;
             margin-left: -34px;
+        }
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: -6%;
+            transform: translate(100%, -50%);
+            color: white;
         }
     }
 `

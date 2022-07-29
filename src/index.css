@@ -9,15 +9,14 @@ body {
 
 .home-container{
   width: 100%;
-  height: 100vh;
 }
 
 
 .home-banner{
   width: 100%;
-  height: 50vh;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.879),
-   rgba(0, 0, 0, 0.848)), url(../src//image/home-banner-img.jpeg);
+  height: 35vh;
+  background-image:linear-gradient(rgba(255, 255, 255, 0.834),
+  rgba(255, 255, 255, 0.843)), url(../src//image/home-banner-img.jpeg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -25,18 +24,20 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
 
 .home-banner h1{
   font-size: 50px;
-  color: white;
+  color: black;
   text-transform: uppercase;
 }
 
 .home-banner h5{
-  color: orange;
+  color: rgb(255, 137, 46);
   font-size: 20px;
-  margin-bottom: -1.3rem;
+  margin-bottom: -2rem;
 
 }
 
@@ -244,9 +245,9 @@ font-size: 10px;
 
   .home-banner{
     width: 100%;
-    height: 50vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.879),
-     rgba(0, 0, 0, 0.848)), url(../src//image/home-banner-img.jpeg);
+    height: 35vh;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.834),
+    rgba(255, 255, 255, 0.843)), url(../src//image/home-banner-img.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -254,10 +255,13 @@ font-size: 10px;
     align-items: center;
     justify-content: center;
     text-align: center;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 2px 7px 6px rgb(255, 247, 240);
   }
-
   .home-banner h1{
     font-size: 30px;
+    margin-top: 2.5rem;
   }
 
   .search-ff{
