@@ -1,37 +1,62 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 const Searched = () => {
 
-    let myApiKey = "dc08124ff78a4ea9855372247525457d";
-    const [seachedRecipes, setSearchedRecipes] = useState([]);
+    const [searchedReceipes, setSearchedRecipes] = useState([]);
+    let myApi = "dc08124ff78a4ea9855372247525457d";
     let params = useParams();
 
-    const getSearhedRecipes = async (name) => {
-        const url = (`https://api.spoonacular.com/recipes/complexSearch?apiKey=${myApiKey}&query=${name}`)
-        const data = await fetch(url);
+    const getSearched = async (name) => {
+        const data = await fetch(`
+        https://api.spoonacular.com/recipes/complexSearch?apiKey=${myApi}&query=${name}`)
         const recipes = await data.json();
         setSearchedRecipes(recipes.results);
-        console.log(recipes)
-    }
+      };
 
-    useEffect(() => {
-        getSearhedRecipes(params.search)
-    }, [params.search])
+      useEffect(() => {
+        getSearched(params.search);
+    }, [params.search]);
 
-    return(
-        <div>
-            {seachedRecipes.map((items) => {
-                return(
-                    <div>
-                        <p>{items.title}</p>
-                    </div>
-                )
-            })}
-        </div>
-    )
+    return <Grid>
+        {searchedReceipes.map((item) => {
+            return (
+                <Card key={item.id}>
+
+                    <img src={item.image} alt="" />
+                    <h6>{item.title}</h6>
+
+                </Card>
+            )
+        })}
+    </Grid>
 }
+
+const Grid = styled.div`
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+grid-gap: 3rem;
+padding: 50px;
+`
+
+const Card = styled.div`
+
+img{
+  width: 100%;
+  border-radius: 2rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+h6{
+  text-align: center;
+  padding: 1rem;
+  color:orange;
+}
+`
 
 export default Searched

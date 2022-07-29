@@ -12,9 +12,6 @@ function App() {
     <div className="App">
     <BrowserRouter>
      <Pages />
-     <Routes>
-      <Route path="/searched/:searched" element={<Searched />} />
-     </Routes>
      </BrowserRouter>
     </div>
   );
