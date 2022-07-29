@@ -13,7 +13,7 @@ const Search = () => {
         e.preventDefault();
         navigate("/searched/" + input)
     }
-
+    
     return(
         <div className='search-ff'>
             
@@ -23,21 +23,18 @@ const Search = () => {
                <input onChange={(e) => setInput(e.target.value)}
                placeholder="search your favorite food"
                type='text' value={input} />
-
-        <FaSearch></FaSearch>
-        
+                <FaSearch />
                </div>
             </FormStyle>
 
         </div>
     )
 }
-
 const FormStyle = styled.form`
-    margin: 2rem 18rem;
+    margin: 2rem 15rem;
 
     div {
-        width: 90%;
+        width: 100%;
         position: relative;
     }
 
@@ -52,7 +49,7 @@ const FormStyle = styled.form`
         outline: none;
         width: 90%;
         text-indent: 30px;
-        margin-left: -20px;
+        margin-left: 0px;
     }
 
     svg {
@@ -63,9 +60,24 @@ const FormStyle = styled.form`
         color: white;
     }
 
+    
 
     @media screen and (max-width: 768px) {
         margin: 2rem 3rem;
+
+        input {
+            border: none;
+            background: black;
+            font-size: 0.9rem;
+            color: white;
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 1rem;
+            outline: none;
+            width: 90%;
+            text-indent: 30px;
+            margin-left: -34px;
+        }
     }
 `
 export default Search

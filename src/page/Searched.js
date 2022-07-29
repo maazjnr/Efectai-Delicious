@@ -11,7 +11,7 @@ const Searched = () => {
 
     const getSearched = async (name) => {
         const data = await fetch(`
-        https://api.spoonacular.com/recipes/complexSearch?apiKey=${myApi}&query=${name}`)
+        https://api.spoonacular.com/recipes/complexSearch?apiKey=${myApi}&number=20&query=${name}`)
         const recipes = await data.json();
         setSearchedRecipes(recipes.results);
       };
@@ -37,8 +37,9 @@ const Searched = () => {
 const Grid = styled.div`
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-grid-gap: 3rem;
-padding: 50px;
+grid-gap: 2rem;
+padding: 20px;
+background: #000;
 `
 
 const Card = styled.div`
@@ -54,7 +55,7 @@ a{
 
 h6{
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
   color:orange;
 }
 `

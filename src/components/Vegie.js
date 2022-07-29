@@ -33,11 +33,11 @@ const Vegie = () => {
         <div className='veggie'>
             <h1>OUR VEGETARIAN</h1> 
             <Splide options={{
-            perPage: 2, 
+            perPage: 3, 
             arrows: false,
             pagination: false,
             drag: "free",
-            gap: "90px"
+            gap: "100px"
             }}>
             {veggie.map((recipe) => {
                 return(

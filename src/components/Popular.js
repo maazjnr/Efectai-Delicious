@@ -6,8 +6,6 @@ import { Link } from 'react-router-dom';
 const Popular = () => {
 
     let myApiKey = "dc08124ff78a4ea9855372247525457d";
-
-
     const [popular, setPopular] = useState([]);
 
     useEffect(() => {
@@ -33,11 +31,11 @@ const Popular = () => {
         <div className='popular'>
             <h1>OUR POPULAR PICKS</h1> 
             <Splide options={{
-            perPage: 2, 
+            perPage: 3, 
             arrows: false,
             pagination: false,
             drag: "free",
-            gap: "90px"
+            gap: "100px"
             }}>
             {popular.map((recipe) => {
                 return(

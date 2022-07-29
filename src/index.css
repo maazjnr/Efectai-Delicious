@@ -98,7 +98,7 @@ text-align: center;
 }
 
 .veggie-container img{
-  width: 500px;
+  width: 400px;
   height: 400px;
   border-radius: 40px;
   object-fit: cover;
@@ -143,7 +143,7 @@ text-align: center;
 }
 
 .popular-container img{
-  width: 500px;
+  width: 400px;
   height: 400px;
   border-radius: 40px;
   object-fit: cover;
@@ -170,33 +170,10 @@ text-align: center;
 
 
 /* Search Styling */
-.search-container{
-  display: grid;
-  grid-template: column;
-  place-items: center;
-  margin-top: 50px;
+.search-ff{
   width: 100%;
-}
-
-.search-container form{
-  width: 100%;
-  height: 50px;
-  display: grid;
-  grid-template: column;
-  place-items: center;
-}
-
-.search-container input{
-  width: 70rem;
-  height: 60px;
-  text-indent: 20px;
-  border-radius: 20px;
-  border:solid #f27121 1px;
 }
 /* Search Styling */
-
-
-
 
 
 
@@ -218,7 +195,7 @@ text-align: center;
   }
 
   .veggie h1, .popular h1{
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .veggie, .popular{
@@ -227,14 +204,14 @@ text-align: center;
   }
 
   .veggie-container img{
-  width: 200px;
+  width: 230px;
   height: 230px;
   border-radius: 30px;
   object-fit: cover;
 }
 
 .popular-container img{
-  width: 200px;
+  width: 230px;
   height: 230px;
   border-radius: 30px;
   object-fit: cover;
@@ -244,11 +221,6 @@ text-align: center;
   display: none;
 }
 
-.search-container input{
-  width: 20rem;
-  height: 50px;
-  text-indent: 20px;
-}
 
 .category-link{
   display: flex;
@@ -268,14 +240,7 @@ font-size: 10px;
 }
 
 
-@media screen and (max-width: 400px){
-  .search-container input{
-    width: 18rem;
-    height: 50px;
-    text-indent: 20px;
-    border-radius: 20px;
-    border:solid #f27121 1px;
-  }
+@media screen and (max-width: 500px){
 
   .home-banner{
     width: 100%;
@@ -294,4 +259,46 @@ font-size: 10px;
   .home-banner h1{
     font-size: 30px;
   }
+
+  .search-ff{
+    width: 100%;
+  }
+
+   .veggie, .popular{
+    height: 40vh;
+    padding: 10px;
+  }
+
+  .veggie-container img{
+  width: 150px;
+  height: 230px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.popular-container img{
+  width: 150px;
+  height: 230px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+.veggie, .popular{
+  height: 40vh;
+  padding: 10px;
+}
+
+.veggie-container img{
+width: 150px;
+height: 230px;
+border-radius: 30px;
+object-fit: cover;
+}
+
+.popular-container img{
+width: 150px;
+height: 230px;
+border-radius: 30px;
+object-fit: cover;
+}
+
 }
