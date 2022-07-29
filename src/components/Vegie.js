@@ -21,9 +21,9 @@ const Vegie = () => {
 
     const getVegie = async () => {
 
-        const url = `https://api.spoonacular.com/recipes/random?apiKey=${myApiKey}&number=22&tags=vegetarian`;
+        const url = `https://api.spoonacular.com/recipes/random?apiKey=${myApiKey}&number=22&tags=vegetarian`
 
-        const check = localStorage.getItem("veggie");
+        const check = localStorage.getItem("veggie")
         if(check) {
             setVeggie(JSON.parse(check))
         } else{
