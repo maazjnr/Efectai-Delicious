@@ -56,4 +56,4 @@ const Vegie = () => {
     )
 }
 
-export default Vegie
+export default Vegie;
