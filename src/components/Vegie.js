@@ -10,6 +10,7 @@ const Vegie = () => {
     useEffect(() => {
         Aos.init({ duration: 1000 });
       }, []);
+      
 
     let myApiKey = "dc08124ff78a4ea9855372247525457d";
 
