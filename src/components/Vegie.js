@@ -22,16 +22,9 @@ const Vegie = () => {
     const getVegie = async () => {
 
         const url = `https://api.spoonacular.com/recipes/random?apiKey=${myApiKey}&number=22&tags=vegetarian`
-
-        const check = localStorage.getItem("veggie")
-        if(check) {
-            setVeggie(JSON.parse(check))
-        } else{
             const api = await fetch(url);
             const data = await api.json();
             setVeggie(data.recipes)
-            localStorage.setItem("veggie", JSON.stringify(data.recipes));
-        }
     };
 
     return(
