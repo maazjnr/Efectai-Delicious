@@ -6,6 +6,7 @@ import Recipe from "./Recipe";
 import Cuisine from "./cuisene";
 
 const Pages = () => {
+    
     const location = useLocation();
 
     return(

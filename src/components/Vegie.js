@@ -22,7 +22,7 @@ const Vegie = () => {
 
     const getVegie = async () => {
 
-        const url = `https://api.spoonacular.com/recipes/random?apiKey=${myApiKey}&number=22&tags=vegetarian`
+        const url = `https://api.spoonacular.com/recipes/random?apiKey=${myApiKey}&number=9&tags=vegetarian`
             const api = await fetch(url);
             const data = await api.json();
             setVeggie(data.recipes)

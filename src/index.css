@@ -9,14 +9,18 @@ body {
 
 .home-container{
   width: 100%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.955),
+  rgba(0, 0, 0, 0.942)), url(../src//image/home-banner-img.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
 
 .home-banner{
   width: 100%;
   height: 35vh;
-  background-image:linear-gradient(rgba(255, 255, 255, 0.834),
-  rgba(255, 255, 255, 0.843)), url(../src//image/home-banner-img.jpeg);
+  background-image:linear-gradient(rgba(255, 139, 6, 0.834),
+  rgba(255, 124, 2, 0.843)), url(../src//image/home-banner-img.jpeg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -24,22 +28,22 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
+
 }
 
 .home-banner h1{
   font-size: 50px;
-  color: black;
+  color: white;
   text-transform: uppercase;
 }
 
 .home-banner h5{
-  color: rgb(255, 137, 46);
+  color: white;
   font-size: 20px;
   margin-bottom: -2rem;
 
 }
+
 
 
 .category-link{
@@ -128,7 +132,7 @@ text-align: center;
 
 /* POPULAR STYLING */
 .popular{
-  height: 30vh;
+
   padding: 0px 50px;
   text-align: center;
   margin-top: 20rem;
@@ -177,6 +181,50 @@ text-align: center;
 /* Search Styling */
 
 
+/* Recipe Image */
+
+.recipes{
+  padding: 50px;
+}
+
+.recipes h2{
+  color: orangered;
+}
+.recipe-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+.recipe-container button{
+  background-color: firebrick;
+  margin: 10px;
+  height: 50px;
+  color: wheat;
+  width: 170px;
+  font-weight: bold;
+  border: none;
+}
+
+.recipe-container button::after{
+  background-color: gray;
+}
+
+
+.recipe-image{
+  border-radius: 50px;
+  width: 560px;
+  height: 550px;
+  object-fit: cover;
+}
+
+.recipe-details{
+  padding: 0px 30px;
+}
+/* Recipe Image */
+
+
 
 
 
@@ -190,6 +238,10 @@ text-align: center;
 
 
 @media screen and (max-width: 768px) {
+
+  .home-container{
+    height: 155vh;
+  }
 
   .popular{
     margin-top: 0px;
@@ -246,8 +298,8 @@ font-size: 10px;
   .home-banner{
     width: 100%;
     height: 35vh;
-    background-image:linear-gradient(rgba(255, 255, 255, 0.834),
-    rgba(255, 255, 255, 0.843)), url(../src//image/home-banner-img.jpeg);
+    background-image:linear-gradient(rgba(255, 139, 6, 0.834),
+    rgba(255, 124, 2, 0.843)), url(../src//image/home-banner-img.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -255,9 +307,8 @@ font-size: 10px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    box-shadow: 2px 7px 6px rgb(255, 247, 240);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
   }
   .home-banner h1{
     font-size: 30px;
@@ -304,5 +355,6 @@ height: 230px;
 border-radius: 30px;
 object-fit: cover;
 }
+
 
 }
