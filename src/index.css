@@ -34,10 +34,10 @@ body {
 
 .home-banner h1{
   font-size: 50px;
-  color: white;
+  color: black;
   text-transform: uppercase;
   animation-name: welcome;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-direction: reverse;
 }
@@ -452,6 +452,8 @@ font-size: 10px;
     align-items: center;
     justify-content: center;
     text-align: center;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
   }
   .home-banner h1{
     font-size: 30px;
