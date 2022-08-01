@@ -37,7 +37,7 @@ function Cuisine() {
     >
       {cuisine.map((item) => {
         return(
-          <Card key={item.id} data-aos="zoom-in">
+          <Card key={item.id} data-aos="zoom-out">
             <Link to={"/recipe/" + item.id}>
             <img src={item.image} alt='' />
             <h4>{item.title}</h4>

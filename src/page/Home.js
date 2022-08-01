@@ -6,6 +6,7 @@ import Vegie from '../components/Vegie';
 import Search from '../components/Search';
 import Popular from '../components/Popular';
 
+
 const Home = () => {
 
     return(

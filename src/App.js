@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import Pages from "./page/Pages";
+import Footer from "./page/Footer";
+
 
 function App() {
 
@@ -11,6 +13,7 @@ function App() {
     <div className="App">
     <BrowserRouter>
      <Pages />
+     <Footer />
      </BrowserRouter>
     </div>
   );

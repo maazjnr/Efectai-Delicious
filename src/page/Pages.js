@@ -4,6 +4,7 @@ import Home from "./Home";
 import Searched from "./Searched";
 import Recipe from "./Recipe";
 import Cuisine from "./cuisene";
+import Footer from "./Footer";
 
 const Pages = () => {
     
