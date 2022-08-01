@@ -20,14 +20,14 @@ const Home = () => {
                     <FaPizzaSlice />
                     <h4>Italian</h4>
                     </Link>
-                    <Link className='category-link' to='/cuisine/Thai'>
-                    <GiNoodles /><h4>Thai</h4>
-                    </Link>
                     <Link className='category-link' to='/cuisine/American'>
                     <FaHamburger/>
                     <h4>America</h4>
                     </Link>
-                    <Link className='category-link' to='/cuisine/Thai' >
+                    <Link className='category-link' to='/cuisine/Thai'>
+                    <GiNoodles /><h4>Thai</h4>
+                    </Link>
+                    <Link className='category-link' to='/cuisine/Japanese' >
                     <GiChopsticks />
                     <h4>Japan</h4>
                     </Link>

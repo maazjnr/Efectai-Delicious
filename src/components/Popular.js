@@ -40,7 +40,7 @@ const Popular = () => {
                 return(
                     <SplideSlide key={recipe.id}>
                     <div className='popular-container'>
-                        <Link to='/'>
+                        <Link to={'/recipe/' + recipe.id}>
                         <img src={recipe.image} alt="popularimage" />
                         <p>{recipe.title}</p>
                         </Link>
@@ -53,4 +53,4 @@ const Popular = () => {
     )
 }
 
-export default Popular
+export default Popular;

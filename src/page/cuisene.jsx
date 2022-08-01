@@ -2,8 +2,15 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import {motion} from 'framer-motion';
 import {Link, useParams} from 'react-router-dom';
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 function Cuisine() {
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
 
   let myApiKey = "dc08124ff78a4ea9855372247525457d";
   const [cuisine, setCuisine] = useState([])
@@ -30,7 +37,7 @@ function Cuisine() {
     >
       {cuisine.map((item) => {
         return(
-          <Card key={item.id}>
+          <Card key={item.id} data-aos="zoom-in">
             <Link to={"/recipe/" + item.id}>
             <img src={item.image} alt='' />
             <h4>{item.title}</h4>

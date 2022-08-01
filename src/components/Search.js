@@ -21,7 +21,7 @@ const Search = () => {
                <div>
                    
                <input onChange={(e) => setInput(e.target.value)}
-               placeholder="search your favorite food"
+               placeholder="search your favorite food food"
                type='text' value={input} />
                 <FaSearch />
                </div>
@@ -50,6 +50,7 @@ const FormStyle = styled.form`
         width: 90%;
         text-indent: 10px;
         margin-left: 0px;
+        border: 1px solid rgba(255, 124, 2, 0.685);
     }
 
     svg {
@@ -77,6 +78,7 @@ const FormStyle = styled.form`
             width: 90%;
             text-indent: 10pxpx;
             margin-left: -34px;
+            border: 1px solid rgba(255, 124, 2, 0.685);
         }
 
         svg {

@@ -42,7 +42,7 @@ const Vegie = () => {
                 return(
                     <SplideSlide key={recipe.id}>
                     <div className='veggie-container'>
-                        <Link to='/'>
+                        <Link to={'/recipe/' + recipe.id}>
                         <img src={recipe.image} alt="veggieimage" />
                         <p>{recipe.title}</p>
                         </Link>
