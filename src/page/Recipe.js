@@ -40,17 +40,17 @@ const Recipe = () => {
 
             {activeTab === "instruction" && (
                             <div>
-                            <p dangerouslySetInnerHTML={{__html: details.summary}}></p>
-                            <p dangerouslySetInnerHTML={{__html: details.instructions}}></p>
+                            <DetailsWrapper dangerouslySetInnerHTML={{__html: details.summary}}></DetailsWrapper>
+                            <DetailsWrapper dangerouslySetInnerHTML={{__html: details.instructions}}></DetailsWrapper>
                         </div>
                 )}
 
                 {activeTab === "ingredient" && (
-                    <ul>
+                    <UlList>
                         {details.extendedIngredients.map((ingredient) => (
                             <li key={ingredient.id}>{ingredient.original}</li>
                         ))}
-                    </ul>
+                    </UlList>
 
                 )}
             </div>
@@ -61,11 +61,13 @@ const Recipe = () => {
 }
 
 const DetailsWrapper = styled.div`
-    margin-top: 10rem;
-    margin-bottom: 5rem;
-    padding: 5rem;
-    display: flex;
+color: white;
 `;
 
+const UlList = styled.ul`
+li{
+    color: white;
+}
+`
 
 export default Recipe;
