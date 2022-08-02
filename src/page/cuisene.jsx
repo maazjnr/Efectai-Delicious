@@ -66,11 +66,13 @@ function Cuisine() {
 
   a{
     text-decoration: none;
+    color: rgb(255, 183, 0)
   }
 
   h4{
     text-align: center;
     color: orange;
+    color: white;
   }
 
   @media screen and (max-width: 360px){
