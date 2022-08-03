@@ -28,9 +28,9 @@ const Home = () => {
                     <Link className='category-link' to='/cuisine/Thai'>
                     <GiNoodles /><h4>Thai</h4>
                     </Link>
-                    <Link className='category-link' to='/cuisine/Japanese' >
+                    <Link className='category-link' to='/cuisine/Chinese' >
                     <GiChopsticks />
-                    <h4>Japan</h4>
+                    <h4>China</h4>
                     </Link>
                 </div>
 
