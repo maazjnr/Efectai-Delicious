@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Vegie from '../components/Vegie';
 import Search from '../components/Search';
 import Popular from '../components/Popular';
+import Footer from './Footer';
 
 
 const Home = () => {
@@ -36,6 +37,7 @@ const Home = () => {
 
                 <Vegie />
                 <Popular />
+                <Footer />
             </section>
     )
 }
