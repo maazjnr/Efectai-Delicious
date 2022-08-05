@@ -12,11 +12,14 @@ const Home = () => {
 
     return(
             <section className='home-container'>
+
                 <div className='home-banner'>
                     <h5>Welcome to</h5>
                     <h1>Efectai Delicious</h1>
                 </div>
+
                 <Search />
+                
                 <div className='category'>
                     <Link className='category-link' to='/cuisine/Italian'>
                     <FaPizzaSlice />
